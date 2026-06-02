@@ -13,11 +13,11 @@ do{
 console.log(Object.values(Alunos))
 
 Alunos.forEach(aluno => {
-    if(aluno.qtdFaltas == 0)
+    if (aluno.nome.toUpperCase().startsWith("A")) {
         alert(`Aluno: ${aluno.nome}
         Disciplina: ${aluno.disciplina}
         Quantidade de faltas: ${aluno.qtdFaltas}
         Nota final: ${aluno.notaFinal}
     `)
-    });
-
+    }
+});
